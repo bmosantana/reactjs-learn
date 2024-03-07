@@ -29,3 +29,13 @@ h2 {
 #teste {
 
 }
+
+/* Box models - Caixas
+    no css cada um desses boxes retangulares é descrita usando
+    um boxmodel padrão, o modelo em sí descrve o conteúdo do
+    espaço ocupado por um elemento X. Cada box possui 4 edges:
+    margin, border, padding e content.
+
+    *é isso que as vezes interfere em alguns ajustes de padding ou
+    margin, dependendo do que vamos fazer no projeto.
+*/
