@@ -1,0 +1,31 @@
+/* O que é css?
+    - é  uma linguagem de estilo para páginas web.
+    - ele prepara e deixa o conteúdo visual mais atrativo.
+    - o documento é lido de cima para baixo, e algo escrito no topo
+    pode ser sobreescrito por algo feito no final do arquivo.
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+height: 100%;
+}
+
+/* Seletor de tipo */
+h1 {
+    background-color: yellow;
+}
+
+/* seletor de classe com . na frente */
+.abc {
+
+}
+
+/* seetor de identificador único, com # e o nome único */
+#teste {
+    
+}
