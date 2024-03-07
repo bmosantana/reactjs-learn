@@ -16,7 +16,7 @@ height: 100%;
 }
 
 /* Seletor de tipo */
-h1 {
+h2 {
     background-color: yellow;
 }
 
@@ -27,5 +27,5 @@ h1 {
 
 /* seetor de identificador único, com # e o nome único */
 #teste {
-    
+
 }
