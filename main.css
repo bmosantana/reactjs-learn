@@ -11,8 +11,9 @@
     padding: 0;
 }
 
-html, body {
-height: 100%;
+html,
+body {
+    height: 100%;
 }
 
 /* Seletor de tipo */
@@ -20,15 +21,19 @@ h2 {
     background-color: yellow;
 }
 
-/* seletor de classe com . na frente */
-.abc {
-
+h3 {
+    /*  podemos colocar margin em um ponto especifico como bottom ou top, 
+    ou podemos colocar no item como um todo */
+    /* margin: 1rem; */
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
+
+/* seletor de classe com . na frente */
+.abc {}
 
 /* seetor de identificador único, com # e o nome único */
-#teste {
-
-}
+#teste {}
 
 /* Box models - Caixas
     no css cada um desses boxes retangulares é descrita usando
@@ -39,3 +44,65 @@ h2 {
     *é isso que as vezes interfere em alguns ajustes de padding ou
     margin, dependendo do que vamos fazer no projeto.
 */
+
+/* flexbox */
+
+.main-div-flexbox {
+    border: 1px solid red;
+    margin-top: 1rem;
+
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    align-items: center;
+}
+
+.item {
+    color: white;
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    /* margin: 1rem; */
+
+
+    display: flex;
+    /* exemplo: texto centralizado dentro de um cubo */
+    align-items: center;
+    justify-content: center;
+}
+
+/* Pseudo-classe e elementos
+    a gente consegue colocar novas ações e interações visuais
+*/
+
+.item:hover {
+    background-color: limegreen;
+    cursor: pointer;
+}
+
+input:focus {
+    color: red;
+    background-color: pink;
+}
+
+/* Media type
+    indica qual o dispositivo o código css é direcionado. 
+    afinal abrimos medias em vários dispositivos hoje em dia.
+*/
+.media-query-teste {
+    background-color: aquamarine;
+}
+
+@media (max-width: 450px) {
+
+    /* body */
+    .media-query-teste {
+        background-color: pink;
+    }
+
+    .main-div-flexbox {
+        flex-direction: column;
+    }
+
+
+}
