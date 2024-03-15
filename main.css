@@ -21,13 +21,13 @@ h2 {
     background-color: yellow;
 }
 
-h3 {
+/* h3 { */
     /*  podemos colocar margin em um ponto especifico como bottom ou top, 
     ou podemos colocar no item como um todo */
     /* margin: 1rem; */
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-}
+    /* margin-bottom: 1rem; */
+    /* margin-top: 0px; */
+/* } */
 
 /* seletor de classe com . na frente */
 /* .abc {} */
@@ -91,6 +91,10 @@ input:focus {
 */
 .media-query-teste {
     background-color: aquamarine;
+}
+
+hr {
+    margin-bottom: 1rem;
 }
 
 @media (max-width: 450px) {
