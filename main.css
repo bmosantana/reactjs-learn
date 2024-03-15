@@ -30,10 +30,10 @@ h3 {
 }
 
 /* seletor de classe com . na frente */
-.abc {}
+/* .abc {} */
 
 /* seetor de identificador único, com # e o nome único */
-#teste {}
+/* #teste {} */
 
 /* Box models - Caixas
     no css cada um desses boxes retangulares é descrita usando
