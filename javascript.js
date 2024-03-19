@@ -13,7 +13,7 @@
 */
 
 // Operações básicas
-//Variaveis 
+//Variáveis 
 const b = 25;
 const c = '25'
 
@@ -85,6 +85,50 @@ switch (nota) {
 }
 */
 
+//Tipos de variáveis
 
+//é case sensitive e deve smepre começar com _ ou com um caracter. 
+//Cada variavel é um espaço alugado na memória.
 
+var nome = 'Ana'
+let idade = 23
+const viva = true //Não mutavel, porque é uma constante e ela não muda de valor
 
+//Tipos de variáveis
+// Boolean = true ou false
+// null =  Nulo
+// undefined = Não definido
+// Number =  42 ou 3.14159
+// String = "Holly"
+
+//Laços de Repetição
+//é um bloco de codigo que se repete até que uma condição seja atingida ou mudada.
+//feito para não repetir código e assim melhorar performance e qualidade.
+//no JS temos: For, While, Foreach, Map
+
+//Fazendo uma tabuada com FOR
+let i = 0;
+for (i; i <= 10; i++) {
+    console.log(`${i} x 5 = ${i * 5}`)
+    
+}
+console.log('-------------------------------')
+//devolvendo o valor de 0 para i (que estava com 11 nesse passo)
+i = 0;
+
+while (i <= 10) {
+    console.log(`${i} x 2 = ${i * 2}`)
+    i++
+}
+console.log('--------------------------------')
+const valores = [0,1,2,3,4,5,6,7,8,9,10];
+valores.forEach((element) => {
+    console.log(`${element} x 3 = ${element * 3}`)
+});
+
+console.log('-------------------------------');
+
+const resultMap = valores.map((element) => {
+    return element * 9;
+});
+console.log(resultMap)
