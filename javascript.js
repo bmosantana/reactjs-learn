@@ -110,7 +110,7 @@ const viva = true //Não mutavel, porque é uma constante e ela não muda de val
 let i = 0;
 for (i; i <= 10; i++) {
     console.log(`${i} x 5 = ${i * 5}`)
-    
+
 }
 console.log('-------------------------------')
 //devolvendo o valor de 0 para i (que estava com 11 nesse passo)
@@ -121,7 +121,7 @@ while (i <= 10) {
     i++
 }
 console.log('--------------------------------')
-const valores = [0,1,2,3,4,5,6,7,8,9,10];
+const valores = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 valores.forEach((element) => {
     console.log(`${element} x 3 = ${element * 3}`)
 });
@@ -132,3 +132,27 @@ const resultMap = valores.map((element) => {
     return element * 9;
 });
 console.log(resultMap)
+
+/**
+ * Functions/Funções
+ * é uma função que no fim ela  é um subprograma, que pode ser
+ * chamado por um código externo ou interno no caso de recursão.
+ * No mais ela segue o mesmo principio de funções, recebendo valores,
+ * executando passo, e retornando valores e ações dos passos instruidos.
+ */
+
+//função normal
+function Soma(num1, num2) {
+    return num1 + num2;
+}
+console.log(Soma(1, 2));
+
+/**
+ * ArrowFunctions
+ * A gente pode atribuir ela dentro de uma variável, 
+ * diretamente ela não tem nome, mas segue os mesmos principios 
+ * de funções, e é também conhecida como funções anônimas.
+ */
+
+const Sub = (num0, num) => num0 - num;
+console.log(Sub(10, 1));
