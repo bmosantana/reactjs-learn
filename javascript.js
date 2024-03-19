@@ -156,3 +156,27 @@ console.log(Soma(1, 2));
 
 const Sub = (num0, num) => num0 - num;
 console.log(Sub(10, 1));
+
+/**
+ * Arrays
+ * 
+ * São uma lista de objetos, então é uma lista de objetos
+ * que tem um ou mais valores atribuidos, ou pode ser apenas 
+ * valores, e em ambos os casos podemos acessa-los separadamente
+ * através do index(posição) de cada elemento que está dentro dele.
+ * 
+ * arrays começam sempre na contagem 0
+ */
+
+const cidades = [
+  {nome: 'Toronto', ano: 2025},
+  {nome: 'Tokyo', ano: 2027},
+ 
+];
+
+cidades.push({
+    nome: "Seoul",
+    ano: 2026
+})
+
+console.log(cidades[2].nome);
