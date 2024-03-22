@@ -201,6 +201,12 @@ const cidadeReduce = cidades.reduce((acc, cidade)=> {//Reduce é muito bom para 
 console.log(cidadeReduce); //retorna um objeto, e depois de achar ele para de procurar.
 
 
+//para validar cada item de um array/ objeto
+const cidadeSome = cidades.some(cidades => cidades.id > 10);
+console.log(cidadeSome); //usado em validações: retorna um true ou false, dependendo da condição
+
+const cidadeEvery = cidades.every(cidades => cidades.id < 10);
+console.log(cidadeEvery); //também usado em condições, porém retorna true, apenas se todas as condições forem verdadeiras
 
 console.log('-----------------------------')
 /**Novas funcionalidades do ES6+
