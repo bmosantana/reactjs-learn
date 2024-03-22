@@ -169,9 +169,12 @@ console.log(Sub(10, 1));
  */
 
 const cidades = [
-  {nome: 'Toronto', ano: 2025},
-  {nome: 'Tokyo', ano: 2027},
- 
+    { nome: 'Nova York', ano: 2027, id: 1 },
+    { nome: 'Amsterdã', ano: 2027, id: 2 },
+    { nome: 'Seoul', ano: 2027, id: 3 },
+    { nome: 'Londres', ano: 2027, id: 4 },
+    { nome: 'Nápolis', ano: 2027, id: 5 },
+    { nome: 'Toronto', ano: 2025, id: 6 },
 ];
 
 cidades.push({
@@ -179,4 +182,15 @@ cidades.push({
     ano: 2026
 })
 
-console.log(cidades[2].nome);
+// console.log(cidades[2].nome);
+const cidadesfiltradas = cidades.filter(cidades => cidades.ano = 2027 );
+//console.table(var) => ele monta uma tabela no console, é muito ultil pra usar com objetos.
+console.table(cidadesfiltradas)
+
+console.log('-----------------------------')
+/**Novas funcionalidades do ES6+
+ * 
+ * A versão 6 do JavaScript/Ecma Script trouxe novas funcionalidades
+ * como as funções: find, filter, findIndex, reduce, some, e very
+ */
+
