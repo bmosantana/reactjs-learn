@@ -179,13 +179,28 @@ const cidades = [
 
 cidades.push({
     nome: "Seoul",
-    ano: 2026
+    ano: 2026,
+    id: 7
 })
 
 // console.log(cidades[2].nome);
-const cidadesfiltradas = cidades.filter(cidades => cidades.ano = 2027 );
+const cidadesfiltradas = cidades.filter(item => item.ano = 2027 );
 //console.table(var) => ele monta uma tabela no console, é muito ultil pra usar com objetos.
 console.table(cidadesfiltradas)
+
+const cidadeFind = cidades.find(item => item.nome === 'Seoul');
+console.log(cidadeFind); //retorna um objeto, e depois de achar ele para de procurar.
+
+const cidadeFindIndex = cidades.findIndex(item => item.nome === 'Seoul');
+console.log(cidadeFindIndex); //retorna a posição (index) que o objeto pesquisado está no array/objeto
+
+const cidadeReduce = cidades.reduce((acc, cidade)=> {//Reduce é muito bom para quando precisamos fazer calculos dentro de um array/objeto
+    //acc é um acumulator/acumulador
+    return acc + cidade.ano
+}, 0);
+console.log(cidadeReduce); //retorna um objeto, e depois de achar ele para de procurar.
+
+
 
 console.log('-----------------------------')
 /**Novas funcionalidades do ES6+
