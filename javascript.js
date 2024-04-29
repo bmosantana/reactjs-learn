@@ -215,3 +215,12 @@ console.log('-----------------------------')
  * como as funções: find, filter, findIndex, reduce, some, e very
  */
 
+/*
+    DOM:
+    - Documento Object Model - é uma interface de programação para
+    documentos html e xml.
+    - ela representa a página de formaque os programas possam alterar o documento.
+    - não é algo do js mas consegue se comunicar com tal.
+    - dom é com base em uma hierarquia assim como o html, que tambem tem uma hierarquia.   
+*/
+
